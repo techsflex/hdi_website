@@ -1,0 +1,6 @@
+ABOUT US: 
+	- Change to About
+	- Flip Image -> Change to Header Slider
+	- Mission Statment -> Mission
+	- Sidebar -> Button
+	- Image rounded edged to square

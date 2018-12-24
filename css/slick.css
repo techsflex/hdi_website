@@ -1,0 +1,158 @@
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+.carousel-item {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.carousel-caption {
+	color: black;
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: initial;
+}
+
+.carousel-caption h3 {
+	font-size: 4rem;
+}
+
+.carousel-caption p {
+	font-size: 2rem;
+}
+
+button {
+	font: bold;
+	background-color: rgba(177,177,177, 0.7)
+}
+
+button:hover {
+	background-color: darkgreen;
+	color: white;
+}
+
+/*CSS GRID FOR EXPLORE AFTER SALES*/
+.grid-container-explore {
+	display: grid;
+	margin: 0 15px;
+	width: 100%;
+	min-height: 250px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "maintenance care crm"
+						 "maintenance warr crm";
+	grid-gap: 2px;
+}
+
+@media screen and (max-width: 768px) {
+	.grid-container-explore {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "maintenance care"
+						 	 "crm 		  warr";
+	}
+}
+
+.grid-items-explore {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	/*border-radius: 10px;*/
+	
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover
+}
+
+.maintenance {
+	grid-area: maintenance;
+
+}
+
+.care {
+	grid-area: care; 
+
+}
+
+.warranty {
+	grid-area: warr;
+
+}
+
+.crm { 
+	grid-area: crm;
+
+}
+
+
+/*CSS GRID FOR PERIODIC MAINTENANCE & INSPECTIONS SECTION OF AFTER SALES*/
+.grid-container {
+	display: grid;
+	margin: 0;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto 1fr 1fr;
+	grid-template-areas: "What Why img1"
+						 "How How img2"
+						 "How How img3";
+	grid-gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+		grid-template-areas: "What" "img1" "Why"
+							 "img2" "How" "img3";
+	}
+}
+
+.grid-items {
+	text-align: justify;
+	/*background-color: maroon;*/
+	/*border: thin solid black;*/
+	border-radius: 10px;
+	padding: 10px;
+	/*color: blanchedalmond;*/
+}
+
+.grid-img {
+	border-radius: 10px;
+	background-color: black;
+}
+
+.grid-img:hover {
+	background-color: #cc0000;
+}
+
+.grid-img img {
+	border-radius: 10px;
+	width: 100%;
+}
+
+.What { 
+	grid-area: What;
+}
+
+.Why {
+	grid-area: Why;
+}
+
+.img1 {
+	grid-area: img1;
+}
+
+.img2 {
+	grid-area: img2;
+}
+
+.How {
+	grid-area: How;
+}
+
+.img3 {
+	grid-area: img3;
+}

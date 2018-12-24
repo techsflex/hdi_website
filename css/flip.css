@@ -1,0 +1,42 @@
+.f1_container {
+	perspective: 1000;
+	-webkit-perspective: 1000;
+	position: relative;
+	/*width: 20.05vw;*/
+	height: 15vw;
+	z-index: 1;
+}
+
+@media (max-width: 768px) {
+	.f1_container {
+		height: 50vw;
+	}
+}
+.f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.f1_container:hover .f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #cc0000;
+}
+.face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	backface-visibility: hidden;
+}
+.face:hover {
+	background-color: #cc0000;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  background-color: #cc0000;
+}

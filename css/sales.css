@@ -1,0 +1,58 @@
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes bgscroll {
+	from {background-position: 0px 0px, 0px 100%, 0px 50%, 0px 0px;}
+	to {background-position: 7680px 0, 5760px 100%, 3840px 50%, 1920px 0;} 
+}
+
+.clientlist {
+    background-color: #fff;
+    background-image: 
+		url("../img/sales/clients/clients.jpg");
+    background-position: 0px 0px, 0px 100%, 0px 50%, 0px 0px;
+    background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+    width:100%;
+    height:125px;
+      
+    animation-name: bgscroll;
+    animation-duration: 200s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#clients {
+    height:125px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.preawards {
+	width:  100%;
+	margin: 0;
+	background:#00171d;
+	color: whitesmoke;
+}
+
+.block {
+    /*border: 1px solid red;*/
+    text-align: center;
+    vertical-align: middle;
+}
+.circle {
+    background: #cc0000;
+    border-radius: 250px;
+    color: white;
+    height: 250px;
+    font-weight: bold;
+    width: 250px;
+    display: table;
+    margin: 20px auto;
+}
+.circle p {
+    vertical-align: middle;
+    display: table-cell;
+}

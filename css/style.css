@@ -1,0 +1,104 @@
+body {
+	font-size: 1.2rem;
+	color: rgba(62,66,75);
+	letter-spacing: 0.05em;
+}
+
+nav {
+	z-index: 100;
+	background-color: rgba(255,255,255,0.4);
+}
+
+.navbar-light {
+	font-weight: bold;
+}
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item:focus .nav-link,
+.navbar-light .nav-item:hover .nav-link {
+	color: black;
+	font-weight: bold;
+}
+
+.apptbtn {
+		margin-top: 0.3rem;
+	}
+
+#headerCarousel .carousel,
+#afterSalesCarousel .carousel
+{
+	margin-top: -4.5em;
+}
+
+#headerCarousel .carousel.slide .carousel-inner .carousel-item {
+	min-height: 300px;
+	height: 90vh;
+	width: 100%;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#afterSalesCarousel .carousel.slide .carousel-inner .carousel-item {
+	z-index: 2;
+	height: 546px;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#sparePartsCarousel .carousel.slide .carousel-inner .carousel-item {
+	z-index: 2;
+	height: 100%;
+	min-height: 100px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+.sales {
+  height: 31vh;
+  min-height: 100px;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+footer {
+	position:static;
+	width: 100%;
+	bottom: 0;
+	margin-top: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+	.nav-link {
+		font-size: 0.78rem;
+	}
+	.dropdown-item {
+		font-size: 0.78rem;
+	}
+	.apptbtn {
+		font-size: 0.78rem;
+		margin-top: 0.18rem;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 1rem;
+	}
+	
+	footer {
+		font-size: 0.75rem;
+	}
+}

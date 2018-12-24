@@ -1,0 +1,81 @@
+.container-fluid {
+	width: 100%;
+    display: flex;
+	background:#002b38;
+}
+
+.contactForm {
+	padding: 25px;
+	background-color: ghostwhite;
+}
+
+
+.container-fluid .box {
+    position:relative;
+    width: 33vw;
+    height:125px;
+    box-sizing:border-box;
+    text-align:center;
+    margin: 50px;
+    background:#00171d;
+    overflow:hidden;
+    border-radius:4px;
+    box-shadow:0 0 0 2px rgba(0,7,10,1);
+}
+
+.container-fluid .box .icon {
+    width:100%;
+    height:100%;
+    background:#00171d;
+    transition: 0.5s;
+}
+
+.container-fluid .box .icon .fa {
+    font-size: 6em;
+    line-height:125px;
+    color: #cc0000;
+}
+
+.container-fluid .box:hover .icon {
+    transform:scale(0);
+}
+
+.container-fluid .box .details {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#03a9f4;
+    transition:0.5s;
+    transform:scale(2);
+    opacity:0;
+}
+
+.container-fluid .box:hover .details {
+    transform:scale(1);
+    opacity:1;
+}
+
+.container-fluid .box .details h3 {
+    margin:0;
+    padding:0;
+    line-height:125px;
+    font-size:24px;
+    color:#fff;
+}
+
+.container-fluid .box .details p {
+    color:#fff;
+}
+
+@media screen and (max-width: 768px) {
+	.container-fluid .box {
+		margin: 10px
+	}
+	
+	.container-fluid .box .icon .fa {
+		font-size: 4em;
+	}
+
+}
