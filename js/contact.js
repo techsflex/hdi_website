@@ -14,29 +14,6 @@ function fontSize (vw) {
 	$(".details h3").css("font-size", sizeh3);
 }
 
-function submitForm() {
-	var url = "contact.php";
-	// POST values in the background the the script URL
-	$.ajax({
-		type: "POST",
-		url: url,
-		data: {
-			name: $("#form_name").val(),
-			email: $("#form_email").val(),
-			phone: $("#form_phone").val(),
-			message: $("#form_message").val(),
-
-		},
-		success: function (data) {
-			alert("Message Sent!");
-		}
-		error: function (jqXHR, textStatus, errorThrown) {
-			alert(textStatus + ": " + errorThrown);
-		}
-	});
-	return false;
-}
-
 $(document).ready(function() {
 	"use strict";
 	
@@ -52,8 +29,8 @@ $(document).ready(function() {
 		fontSize(vw);
 	});
 	
-	$("#submitForm").on('click', function(){
-		alert("Button Clicked!");
-		submitForm();
+	$('#contactus').submit(function(e) {
+		e.preventDefault();
+		alert("Form Submitted!");
 	});
 });
