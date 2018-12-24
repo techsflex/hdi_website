@@ -1,4 +1,4 @@
-.container-fluid {
+.container-fluid.contactHeader {
 	width: 100%;
     display: flex;
 	background:#002b38;
