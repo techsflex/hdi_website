@@ -10,18 +10,16 @@
 	transform-style: preserve-3d;
 }
 .carousel-caption {
-	color: black;
-	top: 50%;
-	transform: translateY(-50%);
-	bottom: initial;
+	bottom: 0;
+	top: auto;
 }
 
 .carousel-caption h3 {
-	font-size: 4rem;
+	font-size: 3rem;
 }
 
 .carousel-caption p {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 button {
@@ -95,32 +93,26 @@ button:hover {
 	display: grid;
 	margin: 0;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto 1fr 1fr;
-	grid-template-areas: "What Why img1"
-						 "How How img2"
-						 "How How img3";
+	grid-template-areas: "What Why How";
 	grid-gap: 10px;
 }
 
 @media screen and (max-width: 768px) {
 	.grid-container {
 		grid-template-columns: 1fr;
-		grid-template-areas: "What" "img1" "Why"
-							 "img2" "How" "img3";
+		grid-template-areas: "What" "Why" "How";
 	}
 }
 
 .grid-items {
 	text-align: justify;
-	/*background-color: maroon;*/
-	/*border: thin solid black;*/
-	border-radius: 10px;
+	border: thin solid black;
+	background: maroon;
+	color: blanchedalmond;
 	padding: 10px;
-	/*color: blanchedalmond;*/
 }
 
 .grid-img {
-	border-radius: 10px;
 	background-color: black;
 }
 
@@ -129,7 +121,6 @@ button:hover {
 }
 
 .grid-img img {
-	border-radius: 10px;
 	width: 100%;
 }
 
@@ -141,18 +132,15 @@ button:hover {
 	grid-area: Why;
 }
 
-.img1 {
-	grid-area: img1;
-}
-
-.img2 {
-	grid-area: img2;
-}
-
 .How {
 	grid-area: How;
 }
 
-.img3 {
-	grid-area: img3;
+.overlay {
+	bottom: 0;
+	position: absolute;
+    width: 100%;
+    height: 25%;
+    background: #000;
+    opacity: 0.3;
 }
