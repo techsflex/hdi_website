@@ -107,6 +107,8 @@ button:hover {
 .grid-items {
 	text-align: justify;
 	border: thin solid black;
+	background: maroon;
+	color: blanchedalmond;
 	padding: 10px;
 }
 
