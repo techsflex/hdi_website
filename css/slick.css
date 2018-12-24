@@ -135,7 +135,3 @@ button:hover {
 .How {
 	grid-area: How;
 }
-
-.howlist {
-	display: none;
-}
