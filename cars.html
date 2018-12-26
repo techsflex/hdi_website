@@ -19,7 +19,7 @@
     <!-- Page Content -->
     <div class="container-fluid">
 		
-		<!-- Civic -->
+		<!-- BR-V -->
 		<div class="row">
 			<div class="col-md-7">
 				<a href="#">
@@ -30,7 +30,7 @@
 			<div class="col-md-5">
 				<h3>Honda BRV</h3>
 				<p>The Honda BR-V is a compact crossover SUV which has been manufactured by Honda since 2015. The car shares its platform with the Mobilio MPV, which is based on an extended Brio and Amaze platform.</p>
-				<a class="btn btn-primary" href="#">View BR-V
+				<a class="btn btn-primary" id="brvmodal" href="#carmodal" data-toggle="modal">View BR-V
 					<span class="glyphicon glyphicon-chevron-right"></span>
 				</a>
 			</div>
@@ -38,7 +38,7 @@
 
       <hr>
 
-      <!-- City -->
+      <!-- Civic -->
       <div class="row">
         <div class="col-md-7">
           <a href="#">
@@ -48,7 +48,7 @@
         <div class="col-md-5">
           <h3>Honda Civic</h3>
           <p>The Honda Civic is a line of cars manufactured by Honda. Originally a subcompact, the Civic has gone through several generational changes, becoming both larger and more upmarket and moving into the compact car segment. The Civic is currently in it's tenth generation.</p>
-          <a class="btn btn-primary" href="#">View Civic
+          <a class="btn btn-primary" id="brvmodal" href="#carmodal" data-toggle="modal">View Civic
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div>
@@ -57,7 +57,7 @@
 
       <hr>
 
-      <!-- BRV -->
+      <!-- City -->
       <div class="row">
         <div class="col-md-7">
           <a href="#">
@@ -67,15 +67,38 @@
         <div class="col-md-5">
           <h3>Honda City</h3>
           <p>The Honda City is a subcompact car which has been produced by the Japanese manufacturer Honda since 1981. In Pakistan, Honda is still producing the 5th generation of City. There is no official word on when the 6th generation of City will be launched and it is widely speculated that Honda might skip the 6th generation of City for the Pakistani market.</p>
-          <a class="btn btn-primary" href="#">View City
+          <a class="btn btn-primary" id="brvmodal" href="#carmodal" data-toggle="modal">View City
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div>
       </div>
       <!-- /.row -->
-
       <hr>
 		
+		<!-- BRV MODAL -->
+	  <div class="modal text-white" id="carmodal" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-full" role="document">
+			  <div class="modal-content">
+				  <div class="modal-header mx-auto my-auto">
+					  <h1 class="modal-title">Honda BR-V</h1>
+				  </div>
+				  
+				  <div class="modal-body p-4">
+					  <div class="row">
+						  <div class="col-sm-12 text-center">
+							  <a href="#">BR-V i-VTECH MT</a>&emsp;
+							  <a href="#">BR-V i-VTECH S</a>
+						  </div>
+					  </div>
+				  </div>
+				  
+				  <div class="modal-footer">
+					  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				  </div>
+			  </div>
+		  </div>
+		</div>
+		<!-- BRV MODAL END -->
     </div>
     <!-- /.container -->
   </body>
