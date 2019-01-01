@@ -71,7 +71,7 @@
             </li>
 
             <li class="nav-item">
-              <button type="button" class="btn btn-success btn-sm apptbtn pull-right">Service Appointment</button>
+				<a class="btn btn-sm btn-success apptbtn" href="#servicemodal" data-toggle="modal">Service Appointment</a>
             </li>            
           </ul>
         </div>
@@ -82,7 +82,168 @@
 	
 	</div>
 
-    
+    <!-- BRV MODAL -->
+	  <div class="modal" id="servicemodal" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+			  <div class="modal-content">
+				  <div class="modal-header" style="background-color: rgba(0,0,0,0.8);">
+					  <h3 style="color: #cc0000;">Service Appointment Form</h3>
+					  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+					  </button>
+				  </div>
+				  
+				  <div class="modal-body p-4">
+					  <!--SERVICE APPOINTMENT FORM START-->
+					  <form id="appointment" method="post" action="javascript:void(0);"><!--action="contact.php"-->
+						  <div class="container-fluid">
+							  <div class="row">
+								  <div class="col-md-6" style="border-right: thin solid black;">
+									  <h5>Client Details</h5>
+									  <hr>
+									  <div class="form-group">
+										  <label for="form_name">Name *</label>
+										  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Firstname is required.">
+										  <div class="help-block with-errors"></div>
+									  </div>
+
+									  <div class="form-group">
+										  <label for="form_company">Company</label>
+										  <input id="form_company" type="text" name="company" class="form-control" placeholder="Please enter your company name">
+										  <div class="help-block with-errors"></div>
+									  </div>
+
+									  <div class="form-group">
+										  <label for="form_contact">Contact Number *</label>
+										  <input id="form_contact" type="text" name="contact" class="form-control" placeholder="Please enter your contact number *" required="required" data-error="Contact number is required.">
+										  <div class="help-block with-errors"></div>
+									  </div>
+								  </div>
+
+								  <div class="col-md-6">
+									  <h5>Vehicle Details</h5>
+									  <hr>
+									  
+									  <div class="row">
+										  <div class="col-md-12">
+											  <div class="form-group">
+												  <label for="form_reg">Car Registration</label>
+												  <input id="form_reg" type="text" name="reg" class="form-control" placeholder="Car registration ID *" required="required" data-error="Car registration number is required.">
+												  <div class="help-block with-errors"></div>
+											  </div>
+										  </div>
+										  
+									  </div>
+									  
+									  <div class="row">
+										  <div class="col-md-6">											  
+											  <div class="form-group">
+												  <label for="form_make">Make *</label>
+												  <select id="form_make" name="make" class="form-control" required="required" data-error="Please specify car make.">
+													  <option value="">--Select--</option>
+													  <option value="honda">Honda</option>
+												  </select>
+												  <div class="help-block with-errors"></div>
+											  </div>
+										  </div>
+										  
+										  <div class="col-md-6">											  
+											  <div class="form-group">
+												  <label for="form_model">Model *</label>
+												  <select id="form_model" name="model" class="form-control" required="required" data-error="Please specify car Model">
+													  <option value="">--Select--</option>
+													  <option value="brv">BR-V</option>
+													  <option value="civic">Civic</option>
+													  <option value="city">City</option>
+												  </select>
+												  <div class="help-block with-errors"></div>
+											  </div>
+										  </div>
+									  </div>
+									  
+									  <div class="row">
+										  <div class="col-md-6">
+											  <div class="form-group">
+												  <label for="form_year">Year</label>
+												  <input id="form_year" type="text" name="year" class="form-control" placeholder="Car model year">
+												  <div class="help-block with-errors"></div>
+											  </div>
+										  </div>
+										  
+										  <div class="col-md-6">
+											  <div class="form-group">
+												  <label for="form_color">Color</label>
+												  <input id="form_color" type="text" name="color" class="form-control" placeholder="Car color">
+												  <div class="help-block with-errors"></div>
+											  </div>
+										  </div>
+									  </div>
+								  </div>
+							  </div>
+							  
+							  <br>
+							  
+							  <div class="row" style="border-top: thin solid black;">
+								  <div class="col-md-12">
+									  <h5>Appointment Details</h5>
+									  <hr>
+									  
+									  <div class="row">
+										  <div class="col-md-6">
+											  <div class="form-group">
+												  <label for="form_date">Date</label>
+												  <input id="form_date" type="text" name="date" class="form-control" placeholder="Appt date">
+												  <div class="help-block with-errors"></div>
+											  </div>
+										  </div>
+
+										  <div class="col-md-6">
+											  <div class="form-group">
+												  <label for="form_time">Time</label>
+												  <input id="form_time" type="text" name="time" class="form-control" placeholder="Appt time">
+												  <div class="help-block with-errors"></div>
+											  </div>
+										  </div>
+									  </div>
+									  
+									  <div class="row">
+										  <div class="col-md-12">
+											  <div class="form-group">
+												  <label for="form_type">Request Type *</label>
+												  <select id="form_type" name="type" class="form-control" required="required" data-error="Please service need">
+													  <option value="">--Select--</option>
+													  <option value="periodic">Periodic Maintenance</option>
+													  <option value="repair">Repairs</option>
+												  </select>
+												  <div class="help-block with-errors"></div>
+											  </div>
+										  </div>
+									  </div>
+									  
+									  <div class="row">
+										  <div class="col-md-12">
+											  <div class="form-group">
+												  <label for="form_remarks">Remarks</label>
+												  <textarea id="form_remarks" name="remarks" class="form-control" placeholder="Remarks" rows="5" required="required" data-error="Please, leave us a message."></textarea>
+												  <div class="help-block with-errors"></div>
+											  </div>
+										  </div>
+									  </div>
+								  </div>
+							  </div>
+						  </div>
+					  </form>
+					  <!--SERVICE APPOINTMENT FORM END-->
+				  </div>
+				  
+				  <div class="modal-footer">
+					  <button type="button" class="btn btn-success" data-dismiss="modal">Request</button>
+					  <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+				  </div>
+			  </div>
+		  </div>
+		</div>
+		<!-- BRV MODAL END -->
     <!-- Footer -->
 	  
     <footer class="py-2 bg-dark">
